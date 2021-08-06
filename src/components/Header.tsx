@@ -37,7 +37,7 @@ const Header: FunctionComponent = () => {
   return (
     <section className={classes.root}>
       <img
-        src="/profile.png"
+        src="andres-jaimes/myLogo.png"
         alt="andres jaimes"
         title="andres jaimes"
         className={classes.photo}

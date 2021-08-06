@@ -2,8 +2,7 @@ import createStyles from "@material-ui/core/styles/createStyles";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import { FunctionComponent } from "react";
-import Social from './Social';
-
+import Social from "./Social";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -13,7 +12,8 @@ const useStyles = makeStyles((theme) =>
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3),
       textAlign: "center",
-      backgroundColor: "green",
+      backgroundColor: theme.palette.grey[900],
+      color: theme.palette.grey[500],
     },
     photo: {
       width: 200,
@@ -21,6 +21,12 @@ const useStyles = makeStyles((theme) =>
       borderRadius: "50%",
       objectFit: "cover",
       marginBottom: 10,
+    },
+    propsText: {
+      color: theme.palette.secondary.main,
+    },
+    titleText:{
+      color:theme.palette.secondary.light
     },
   })
 );
@@ -36,11 +42,14 @@ const Header: FunctionComponent = () => {
         title="andres jaimes"
         className={classes.photo}
       />
-      <Typography component="h1" variant="h3">
-        Andrés Felipe Jaimes Sánchez
+      <Typography component="h1" color="initial" variant="h3">
+        {`<`}
+        <span className={classes.titleText}>Andrés Felipe Jaimes Sánchez</span>
+        {` />`}
       </Typography>
       <Typography component="p" variant="h6">
-        Software Engineer, Cat Lover
+        (<span className={classes.propsText}>Software Engineer</span> &&{" "}
+        <span className={classes.propsText}>Cat Lover</span>)
       </Typography>
       <Social />
     </section>

@@ -37,9 +37,9 @@ const Header: FunctionComponent = () => {
   return (
     <section className={classes.root}>
       <img
-        src="andres-jaimes/myLogo.png"
-        alt="andres jaimes"
-        title="andres jaimes"
+        src="/andres-jaimes/myLogo.png"
+        alt="andres jaimes logo"
+        title="andres jaimes logo"
         className={classes.photo}
       />
       <Typography component="h1" color="initial" variant="h3">

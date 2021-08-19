@@ -1,9 +1,11 @@
-import Header from "./components/Header";
-import Skills from "./components/Skills";
-import About from "./components/About";
+import Header from "components/Header";
+import Skills from "components/Skills";
+import About from "components/About";
 import Grid from "@material-ui/core/Grid";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+import Experience from "components/Experience";
 
 function App() {
   const theme = createTheme({
@@ -25,15 +27,17 @@ function App() {
     <ThemeProvider theme={theme}>
       <div>
         <Header />
+        <Divider />
         <Grid container>
           <Grid item xs={12} sm={7} md={9}>
             <About />
+            <Divider />
+            <Experience />
           </Grid>
           <Grid item xs={12} sm={5} md={3}>
             <Skills />
           </Grid>
         </Grid>
-        education experience cetrificates
       </div>
     </ThemeProvider>
   );

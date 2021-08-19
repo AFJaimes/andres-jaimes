@@ -51,10 +51,10 @@ const About: FunctionComponent = () => {
           color="primary"
           component="p"
         >
-          I am a Computer systems engineer, young and with great learning
-          disposition about new technologies, software design in Web environment
-          and application development. Possess the necessary experience for a
-          good performance that requires responsibility and efficiency.
+          I am a Computer systems engineer, with great interest about new
+          technologies, have experience in software design, Web environments and
+          application development with the necessary experience for a good
+          performance that requires responsibility and efficiency.
           <br />
           <br />
           I like to have acknowledge about tools that efficiently solve everyday

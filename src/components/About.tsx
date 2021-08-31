@@ -2,6 +2,7 @@ import createStyles from "@material-ui/core/styles/createStyles";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import { FunctionComponent } from "react";
+import Pointer from "./Pointer";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -67,7 +68,8 @@ const About: FunctionComponent = () => {
           allow the realization of complex procedures and provides me access to
           media entertainment in a quick way, because, I have been taught and
           learned through my experiences, that you cannot develop technologies
-          without using them first.
+          without using them first
+          <Pointer text="." />
         </Typography>
       </article>
       <Typography className={classes.content} component="p">

@@ -76,7 +76,7 @@ const Experience: FunctionComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h3">
+              <Typography variant="body2" component="h3">
                 <span>{"<"}</span>
                 <span className={classes.experienceTitle}>IMAGENGROUP</span>
                 <span>{"/>"}</span>
@@ -107,7 +107,7 @@ const Experience: FunctionComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h3">
+              <Typography variant="body2" component="h3">
                 <span>{"<"}</span>
                 <span className={classes.experienceTitle}>
                   BUCARAMANGA CITY HALL
@@ -144,7 +144,7 @@ const Experience: FunctionComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h3">
+              <Typography variant="body2" component="h3">
                 <span>{"<"}</span>
                 <span className={classes.experienceTitle}>ISMOCOL S.A</span>
                 <span>{"/>"}</span>
@@ -181,7 +181,7 @@ const Experience: FunctionComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h3">
+              <Typography variant="body2" component="h3">
                 <span>{"<"}</span>
                 <span className={classes.experienceTitle}>
                   FINCARAIZ.COM.CO
@@ -217,7 +217,7 @@ const Experience: FunctionComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h3">
+              <Typography variant="body2" component="h3">
                 <span>{"<"}</span>
                 <span className={classes.experienceTitle}>HUGE INC.</span>
                 <span>{"/>"}</span>

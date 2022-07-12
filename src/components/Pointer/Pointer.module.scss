@@ -1,0 +1,14 @@
+@import "/assets/styles/styles.module.scss";
+
+.root {
+  animation: pointer 1s infinite steps(1);
+}
+
+@keyframes pointer {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: $white;
+  }
+}

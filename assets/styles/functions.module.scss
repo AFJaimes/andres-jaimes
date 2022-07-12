@@ -1,0 +1,5 @@
+@import "./variables.module.scss";
+
+@function spacing($number) {
+  @return $number * $baseSpacing * 1px;
+}

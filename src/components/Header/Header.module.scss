@@ -1,0 +1,40 @@
+@import "/assets/styles/styles.module.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fira Code", monospace;
+  padding-top: spacing(10);
+  padding-bottom: spacing(10);
+  padding-left: spacing(3);
+  padding-right: spacing(3);
+  background-color: $darkMain;
+  color: $colorMain;
+  text-align: center;
+}
+
+.header {
+  font-size: spacing(6);
+  font-weight: 500;
+  margin-bottom: 0;
+  color: $colorComponent;
+}
+
+.subheader {
+  font-weight: 400;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: "50%";
+  object-fit: "cover";
+  margin-bottom: 10px;
+}
+
+.propsText {
+  font-family: "Fira Code", monospace;
+  color: $colorSecondary;
+}

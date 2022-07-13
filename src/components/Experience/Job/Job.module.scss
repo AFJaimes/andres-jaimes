@@ -1,15 +1,18 @@
 @import "/assets/styles/styles.module.scss";
 
-.container{
-  color:$white;
+.container {
+  color: $white;
   font-weight: bold;
   background-color: $darkLight;
   padding: spacing(2);
   border-radius: spacing(2);
+  @media (max-width: 650px) {
+    text-align: center;
+  }
 }
 
-.description{
-  color:$white;
+.description {
+  color: $white;
   font-weight: 400;
   font-size: spacing(2);
 }

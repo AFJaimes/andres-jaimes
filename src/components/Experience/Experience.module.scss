@@ -14,12 +14,22 @@
 
 .jobContainer {
   display: flex;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .header {
   width: 45%;
   text-align: right;
   padding-right: spacing(2);
+  @media (max-width: 650px) {
+    width: 100%;
+    margin-bottom: spacing(1);
+    text-align: center;
+  }
 }
 
 .icon {
@@ -28,10 +38,22 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 650px) {
+    width: 0;
+  }
 }
 
 .job {
   padding-left: spacing(2);
   width: 45%;
   padding-bottom: spacing(2);
+  @media (max-width: 650px) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: spacing(2);
+  }
+}
+
+.downArrow {
+  margin-bottom: spacing(2);
 }

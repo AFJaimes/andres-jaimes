@@ -1,8 +1,12 @@
 import css from "./TimelineIcon.module.scss";
 import { FunctionComponent } from "react";
 import { TimelineIconProps } from "./TimelineIcon.proptypes";
+import useWindowSize from "hooks/useWindowSize";
 
 const Header: FunctionComponent<TimelineIconProps> = ({ ...job }) => {
+  const { width, height } = useWindowSize();
+  console.log(width, height);
+
   return (
     <>
       <span className={css.circle}>
@@ -15,7 +19,7 @@ const Header: FunctionComponent<TimelineIconProps> = ({ ...job }) => {
           <path d={job.icon} />
         </svg>
       </span>
-      <span className={css.line} />
+      {!job.last && <span className={css.line} />}
     </>
   );
 };

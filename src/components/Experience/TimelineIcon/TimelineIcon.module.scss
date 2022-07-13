@@ -1,0 +1,26 @@
+@import "/assets/styles/styles.module.scss";
+
+.icon {
+  fill: $yellow;
+  width: spacing(4);
+  height: spacing(4);
+}
+
+.circle {
+  width: spacing(4);
+  height: spacing(4);
+  border-color: $whiteDark;
+  display: flex;
+  padding: 4px;
+  align-self: baseline;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.line{
+  width: 2px;
+  flex-grow: 1;
+  background-color: $whiteDark;
+}
+

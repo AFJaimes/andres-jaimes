@@ -1,0 +1,25 @@
+@import "/assets/styles/styles.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobContainer{
+  display: flex;
+}
+
+.header{
+  width: 45%;
+  text-align: right;
+  padding-right: spacing(2);
+}
+
+.icon{
+  width: 5%;
+}
+
+.job{
+  padding-left: spacing(2);
+  width: 45%;
+}

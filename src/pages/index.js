@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Header from "components/Header/Header";
-import Skills from "components/Skills";
+import Skills from "components/Skills/Skills";
 import Grid from "@material-ui/core/Grid";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
-import Experience from "components/Experience";
 import About from "components/About/About";
+import Experience from "components/Experience/Experience";
 
 export default function Home() {
   const theme = createTheme({

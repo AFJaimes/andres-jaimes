@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Languajes",
+    "content": [
+      "HTML",
+      "CSS",
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Nextjs",
+      "SASS",
+      "SQL",
+      "Visual Basic",
+      "C#"
+    ]
+  },
+  {
+    "title": "Frameworks",
+    "content": [
+      "Material-UI",
+      "Three.js",
+      "jQuery",
+      "Boostrap",
+      "Material Design",
+      "ASP.NET"
+    ]
+  },
+  {
+    "title": "Tools",
+    "content": [
+      "Adobe Photoshop",
+      "Procreate",
+      "SQL Server",
+      "Google Analytics",
+      "Google DataSudio",
+      "Adobe After Effects",
+      "Adobe Illustrator",
+      "ScreamingFrog",
+      "Microsoft Azure"
+    ]
+  },
+  {
+    "title": "Others",
+    "content": [
+      "Motion",
+      "SEO analysis",
+      "Testing",
+      "Requirements gathering",
+      "Responsive web design",
+      "Continous Integration",
+      "Scrum Master"
+    ]
+  }
+]

@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import About from "components/About/About";
 import Experience from "components/Experience/Experience";
+import Projects from "components/Projects/Projects";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           </Grid>
           <Grid item xs={12}>
             <Divider />
-            Others
+            <Projects />
           </Grid>
         </Grid>
       </div>

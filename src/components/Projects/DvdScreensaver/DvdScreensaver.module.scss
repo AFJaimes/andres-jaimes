@@ -1,0 +1,55 @@
+@import "/assets/styles/styles.module.scss";
+
+.root {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - spacing(4));
+  background-color: $darkMain;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+}
+
+.perfectBg {
+  animation: perfect infinite 1s ease-in-out;
+}
+
+@keyframes perfect {
+  0% {
+    background-color: $darkLight;
+  }
+  10% {
+    background-color: $red;
+  }
+  20% {
+    background-color: $yellow;
+  }
+  30% {
+    background-color: $redDark;
+  }
+  40% {
+    background-color: $green;
+  }
+  50% {
+    background-color: $purple;
+  }
+  60% {
+    background-color: $blue;
+  }
+  70% {
+    background-color: $whiteDark;
+  }
+  80% {
+    background-color: $blueLight;
+  }
+  90% {
+    background-color: $greenDark;
+  }
+  100% {
+    background-color: $darkLight;
+  }
+}

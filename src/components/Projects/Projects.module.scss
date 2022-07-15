@@ -11,7 +11,8 @@
 }
 
 .titleContainer {
-  padding-bottom: spacing(4);
+  width: 100%;
+  padding: 0 spacing(4) spacing(4) spacing(4);
 }
 
 .title {
@@ -20,4 +21,9 @@
 
 .titleSecondary {
   color: $greenDark;
+}
+
+.gridContainer{
+  align-items: center;
+  justify-content: center;
 }

@@ -1,8 +1,10 @@
 import { Grid } from "@material-ui/core";
+import Card from "components/Card/Card";
 import { FunctionComponent } from "react";
 import DvdScreensaver from "./DvdScreensaver/DvdScreensaver";
 import css from "./Projects.module.scss";
 
+// <DvdScreensaver />
 const Projects: FunctionComponent = () => {
   return (
     <section className={css.root}>
@@ -14,8 +16,12 @@ const Projects: FunctionComponent = () => {
             Hobbie Projects
           </span>
         </Grid>
-        <Grid item sm={12} md={6} lg={4}>
-          <DvdScreensaver />
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/dvdCard.png"
+            text="DVD screensaver"
+            component={<DvdScreensaver />}
+          />
         </Grid>
       </Grid>
     </section>

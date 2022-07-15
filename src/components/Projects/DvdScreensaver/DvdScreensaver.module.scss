@@ -2,8 +2,8 @@
 
 .root {
   position: relative;
-  width: 100%;
-  height: calc(100vh - spacing(4));
+  width: calc(100vw - spacing(10));
+  height: calc(100vh - spacing(10));
   background-color: $darkMain;
   overflow: hidden;
 }

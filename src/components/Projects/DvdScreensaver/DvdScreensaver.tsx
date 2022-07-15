@@ -47,18 +47,18 @@ const DvdScreensaver: FunctionComponent = () => {
     if (
       width > 0 &&
       height > 0 &&
-      ((position.x + 111 >= width && position.y + 72 >= height) ||
+      ((position.x + 160 >= width && position.y + 112 >= height) ||
         (position.x <= 0 && position.y <= 0) ||
-        (position.x + 111 >= width && position.y <= 0) ||
-        (position.x <= 0 && position.y + 72 >= height))
+        (position.x + 160 >= width && position.y <= 0) ||
+        (position.x <= 0 && position.y + 112 >= height))
     ) {
       setPerfect(true);
     }
-    if (position.x + 111 >= width && width > 0 && lastBounce !== "right") {
+    if (position.x + 160 >= width && width > 0 && lastBounce !== "right") {
       setAngle(angle >= 90 ? 180 + initialAngle : 180 - initialAngle);
       setLastBounce("right");
     }
-    if (position.y + 72 >= height && height > 0 && lastBounce !== "top") {
+    if (position.y + 112 >= height && height > 0 && lastBounce !== "top") {
       setAngle(angle >= 90 ? 180 + initialAngle : 360 - initialAngle);
       setLastBounce("top");
     }

@@ -1,0 +1,33 @@
+@import "/assets/styles/styles.module.scss";
+
+.container {
+  width: calc(100vw - spacing(10));
+  max-width: calc(100vw - spacing(10));
+  height: calc(100vh - spacing(10));
+  max-height: calc(100vh - spacing(10));
+  padding: spacing(5);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+}
+
+.innerContainer {
+}
+
+.open {
+  animation: open 1s ease-out forwards;
+}
+@keyframes open {
+  0% {
+    transformation: scale(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transformation: scale(1);
+  }
+}
+.close {
+  display: none;
+}

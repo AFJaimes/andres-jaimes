@@ -8,7 +8,7 @@ import css from "./Projects.module.scss";
 const Projects: FunctionComponent = () => {
   return (
     <section className={css.root}>
-      <Grid container>
+      <Grid container className={css.gridContainer}>
         <Grid item sm={12} className={css.titleContainer}>
           <span className={css.title}>Other Works</span>
           <span className={css.titleSecondary}>

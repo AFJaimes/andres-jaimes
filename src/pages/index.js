@@ -25,9 +25,7 @@ export default function Home() {
           </Grid>
           <Grid item xs={12}>
             <Divider />
-            {
-              // <Projects />
-            }
+            <Projects />
           </Grid>
         </Grid>
       </div>

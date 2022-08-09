@@ -1,6 +1,7 @@
 import { Grid } from "@material-ui/core";
 import Card from "components/Card/Card";
 import { FunctionComponent } from "react";
+import ArraysObjects from "./ArraysObjects/ArraysObjects";
 import DvdScreensaver from "./DvdScreensaver/DvdScreensaver";
 import Fincaraiz from "./Fincaraiz/Fincaraiz";
 import Nba from "./Nba/Nba";
@@ -30,6 +31,13 @@ const Projects: FunctionComponent = () => {
             image="/nba75.png"
             text="NBA 75th anniversary pages"
             component={<Nba />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/arraysScreenshot.png"
+            text="Arrays and objects showcase"
+            component={<ArraysObjects />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>

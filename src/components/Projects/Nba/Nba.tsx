@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent } from "react";
 import css from "./Nba.module.scss";
 
 const Nba: FunctionComponent = () => {
@@ -15,12 +15,12 @@ const Nba: FunctionComponent = () => {
       </a>
       
       <img
-        alt="fincaraiz.com.co old layout"
+        alt="nba teaser"
         className={css.images}
         src="Nba1.png"
       />
       <img
-        alt="fincaraiz.com.co old page results"
+        alt="nba final moments"
         className={css.images}
         src="Nba2.png"
       />

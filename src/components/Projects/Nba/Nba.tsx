@@ -20,6 +20,11 @@ const Nba: FunctionComponent = () => {
         src="Nba1.png"
       />
       <img
+        alt="nba explore page"
+        className={css.images}
+        src="NBAExplore.png"
+      />
+      <img
         alt="nba final moments"
         className={css.images}
         src="Nba2.png"

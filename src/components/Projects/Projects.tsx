@@ -4,6 +4,7 @@ import { FunctionComponent } from "react";
 import ArraysObjects from "./ArraysObjects/ArraysObjects";
 import DvdScreensaver from "./DvdScreensaver/DvdScreensaver";
 import Fincaraiz from "./Fincaraiz/Fincaraiz";
+import FlexboxPlayground from "./FlexboxPlayground/FlexboxPlayground";
 import Nba from "./Nba/Nba";
 import css from "./Projects.module.scss";
 
@@ -38,6 +39,13 @@ const Projects: FunctionComponent = () => {
             image="/arraysScreenshot.png"
             text="Arrays and objects showcase"
             component={<ArraysObjects />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/flexbox.png"
+            text="Flexbox Playground"
+            component={<FlexboxPlayground />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>

@@ -10,12 +10,13 @@
   flex-direction: column;
 }
 
-.images{
-  max-width: calc(100% - 20px);
-  padding:10px;
+.images {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.text{
+.text {
   font-size: medium;
   font-weight: normal;
   padding: 10px;

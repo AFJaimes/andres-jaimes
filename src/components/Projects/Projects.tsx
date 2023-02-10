@@ -2,6 +2,7 @@ import { Grid } from "@material-ui/core";
 import Card from "components/Card/Card";
 import { FunctionComponent } from "react";
 import ArraysObjects from "./ArraysObjects/ArraysObjects";
+import AnimationPlayground from "./AnimationPlayground/AnimationPlayground";
 import DvdScreensaver from "./DvdScreensaver/DvdScreensaver";
 import Fincaraiz from "./Fincaraiz/Fincaraiz";
 import FlexboxPlayground from "./FlexboxPlayground/FlexboxPlayground";
@@ -46,6 +47,13 @@ const Projects: FunctionComponent = () => {
             image="/flexbox.png"
             text="Flexbox Playground"
             component={<FlexboxPlayground />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/animationsShowcase.png"
+            text="Animations Playground Showcase"
+            component={<AnimationPlayground />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>

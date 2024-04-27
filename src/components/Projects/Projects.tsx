@@ -8,6 +8,8 @@ import Fincaraiz from "./Fincaraiz/Fincaraiz";
 import FlexboxPlayground from "./FlexboxPlayground/FlexboxPlayground";
 import Nba from "./Nba/Nba";
 import css from "./Projects.module.scss";
+import Abbvie from "./Abbvie/Abbvie";
+import Xfinity from "./Xfinity/Xfinity";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -33,6 +35,27 @@ const Projects: FunctionComponent = () => {
             image="/nba75.png"
             text="NBA 75th anniversary pages"
             component={<Nba />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/xfinity.png"
+            text="Xfinity showroom games"
+            component={<Xfinity />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/stellantis.png"
+            text="Stellantis group dynamic web ads"
+            component={<Xfinity />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/abbvie.jpeg"
+            text="ABBVIE - redesign"
+            component={<Abbvie />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -63,7 +86,6 @@ const Projects: FunctionComponent = () => {
             component={<DvdScreensaver />}
           />
         </Grid>
-     
       </Grid>
     </section>
   );

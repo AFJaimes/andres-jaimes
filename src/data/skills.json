@@ -18,6 +18,7 @@
     "title": "Frameworks",
     "content": [
       "Material-UI",
+      "GSAP",
       "Three.js",
       "jQuery",
       "Boostrap",

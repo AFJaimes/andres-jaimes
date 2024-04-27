@@ -1,0 +1,23 @@
+@import "/assets/styles/styles.module.scss";
+
+.root {
+  position: relative;
+  width: calc(100vw - spacing(10));
+  height: calc(100vh - spacing(10));
+  background-color: $darkMain;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.text {
+  font-size: medium;
+  font-weight: normal;
+  padding: 10px;
+}

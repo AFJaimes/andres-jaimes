@@ -1,16 +1,17 @@
 import Social from "components/Social/Social";
 import { FunctionComponent } from "react";
 import css from "./Header.module.scss";
+import CssKey from "components/CssKey/CssKey";
 
 const Header: FunctionComponent = () => {
   return (
     <section className={css.root}>
-      <img
-        src="/myLogo.png"
-        alt="andres jaimes logo"
-        title="andres jaimes logo"
-        className={css.photo}
-      />
+      <div className={css.keysContainer}>
+        <div>
+          <CssKey keyString="AFJS" />
+        </div>
+      </div>
+     
       <h1 className={css.header}>
         <span className={css.colorMain}>{`<`}</span>
         Andrés Felipe Jaimes Sánchez

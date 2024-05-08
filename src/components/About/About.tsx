@@ -18,23 +18,25 @@ const About: FunctionComponent = () => {
       </span>
       <article>
         <p className={css.description}>
-          I am a Computer systems engineer, with great interest about new
-          technologies, have experience in software design, Web environments and
-          application development with the necessary experience for a good
-          performance that requires responsibility and efficiency.
+          As a Computer Systems Engineer, I possess a deep passion for emerging
+          technologies and have extensive experience in software design, web
+          development, and application development. My professional background
+          has equipped me with the skills required for high performance in roles
+          demanding responsibility and efficiency.
           <br />
           <br />
-          I like to have acknowledge about tools that efficiently solve everyday
-          problems using technological resources, because as each day new
-          technologies are emerging is important to know how the use of the
-          information technologies in society evolves.
+          I am committed to staying at the forefront of technology, continually
+          educating myself about tools that enhance everyday problem-solving
+          through technological means. This commitment is driven by an
+          understanding of the rapid evolution of information technology and its
+          growing impact on society.
           <br />
           <br />
-          Prefer the consumption of technological resources as long as they
-          allow the realization of complex procedures and provides me access to
-          media entertainment in a quick way, because, I have been taught and
-          learned through my experiences, that you cannot develop technologies
-          without using them first
+          My approach to technology consumption is strategic, favoring solutions
+          that facilitate complex procedures and provide swift access to media
+          entertainment. My experiences have taught me that effective
+          development and utilization of technology necessitate firsthand use
+          and understanding.
           <Pointer text="." />
         </p>
       </article>

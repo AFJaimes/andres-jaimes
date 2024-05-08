@@ -3,7 +3,6 @@ import skills from "data/skills.json";
 import css from "./Skills.module.scss";
 
 const Skills: FunctionComponent = () => {
-
   return (
     <section className={css.root}>
       <h2 className={css.title} title="skills">
@@ -18,15 +17,17 @@ const Skills: FunctionComponent = () => {
             <span>{skill.title}:</span>
             <div className={css.chipsContainer}>
               [
-              {skill.content.map((value) => {
+              {skill.content.map((value, index) => {
                 return (
                   <>
-                    <span className={css.chip}>{value}</span>,
+                    <span key={index} className={css.chip}>{value}</span>
+                    {index < skill.content.length - 1 && ","}
                   </>
                 );
               })}
-              ],
+              ]
             </div>
+
             <br />
           </div>
         );

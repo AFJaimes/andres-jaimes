@@ -16,7 +16,7 @@ const CssKey: FunctionComponent<CssKeyProps> = ({ keyString }) => {
   useEffect(() => {
     function updateScale() {
       const screenWidth = window.innerWidth;
-      const elementWidth = 840; 
+      const elementWidth = 546; 
       if (screenWidth < elementWidth) {
         setScale(screenWidth / elementWidth);
       } else {

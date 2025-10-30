@@ -18,25 +18,24 @@ const About: FunctionComponent = () => {
       </span>
       <article>
         <p className={css.description}>
-          As a Computer Systems Engineer, I possess a deep passion for emerging
-          technologies and have extensive experience in software design, web
-          development, and application development. My professional background
-          has equipped me with the skills required for high performance in roles
-          demanding responsibility and efficiency.
+          As a Computer Systems Engineer with a passion for crafting exceptional 
+          digital experiences, I specialize in creating intuitive user interfaces 
+          and engaging user experiences. My expertise lies at the intersection of 
+          design and development, where I bring ideas to life through clean, 
+          efficient code.
           <br />
           <br />
-          I am committed to staying at the forefront of technology, continually
-          educating myself about tools that enhance everyday problem-solving
-          through technological means. This commitment is driven by an
-          understanding of the rapid evolution of information technology and its
-          growing impact on society.
+          I'm driven by the challenge of transforming concepts into visually 
+          stunning and functional applications. Whether it's building interactive 
+          animations, responsive layouts, or seamless user flows, my focus is 
+          always on creating memorable experiences that delight users while 
+          maintaining technical excellence.
           <br />
           <br />
-          My approach to technology consumption is strategic, favoring solutions
-          that facilitate complex procedures and provide swift access to media
-          entertainment. My experiences have taught me that effective
-          development and utilization of technology necessitate firsthand use
-          and understanding.
+          My approach combines modern web technologies with creative problem-solving, 
+          constantly exploring new tools and techniques to push the boundaries of 
+          what's possible in front-end development. I believe great code should not 
+          only work flawlessly but also look beautiful and feel intuitive.
           <Pointer text="." />
         </p>
       </article>

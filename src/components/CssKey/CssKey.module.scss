@@ -9,41 +9,42 @@
 .mainContainer {
   position: relative;
   transform: translateX(50px);
+  margin-bottom: 2rem;
 }
 
 .button {
   position: absolute;
-  transform: translateX(25px);
+  transform: translateX(15px);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border: 0;
   border-radius: 50%;
   background: #63ecdc;
-  box-shadow: -6px 6px 16px #23877b, 6px -6px 16px #3effe8;
+  box-shadow: -4px 4px 10px #23877b, 4px -4px 10px #3effe8;
   cursor: pointer;
   &:hover {
     background: linear-gradient(225deg, #36b9a9, #40dbc9);
-    box-shadow: -6px 6px 16px #31a698, 6px -6px 16px #47f4e0;
+    box-shadow: -4px 4px 10px #31a698, 4px -4px 10px #47f4e0;
   }
   &:active {
     background: #3ccdbc;
-    box-shadow: inset -6px 6px 16px #31a698, inset 6px -6px 16px #47f4e0;
+    box-shadow: inset -4px 4px 10px #31a698, inset 4px -4px 10px #47f4e0;
   }
 }
 
 .keyCap {
   position: relative;
-  width: 100px;
-  top: 10px;
-  height: 100px;
+  width: 65px;
+  top: 6px;
+  height: 65px;
   background-color: rgb(201, 254, 232);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 32px;
   font-weight: bold;
   border-radius: 5px;
   z-index: 5;
@@ -58,44 +59,44 @@
 .keyLeft,
 .keyRight {
   position: relative;
-  width: 25px;
+  width: 16px;
   border-radius: 5px;
 }
 
 .keyLeft {
-  left: 10px;
+  left: 6px;
   background-color: rgb(143, 211, 183);
-  height: 140px;
+  height: 90px;
 }
 
 .keyRight {
-  right: 10px;
+  right: 6px;
   background-color: rgb(143, 211, 183);
-  height: 140px;
+  height: 90px;
 }
 
 .keyBottom {
   position: absolute;
   clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
-  width: 130px;
-  max-height: 35px;
-  left: 10px;
+  width: 85px;
+  max-height: 23px;
+  left: 6px;
   bottom: 0;
   border-radius: 5px;
   background-color: rgb(89, 132, 114);
-  height: 40px;
+  height: 26px;
 }
 
 .keyTop {
   position: absolute;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
-  width: 130px;
-  max-height: 35px;
-  left: 10px;
+  width: 85px;
+  max-height: 23px;
+  left: 6px;
   top: 0px;
   border-radius: 5px;
   background-color: rgb(89, 132, 114);
-  height: 20px;
+  height: 13px;
 }
 
 .keyContainer {
@@ -103,7 +104,7 @@
   position: relative;
   transition: transform 0.1s ease-out;
   &:hover {
-    transform: translateY(10px);
+    transform: translateY(6px);
     .keyCap {
       background-color: rgb(165, 229, 197);
     }
@@ -114,28 +115,28 @@
   position: absolute;
   width: 100%;
   background-color: rgb(44, 57, 55);
-  height: calc(100% + 25px);
+  height: calc(100% + 16px);
   border-radius: 8px;
-  bottom: -15px;
+  bottom: -10px;
 }
 
 .keyboardContainer {
   position: absolute;
-  width: calc(100% + 150px);
-  left: -130px;
+  width: calc(100% + 98px);
+  left: -85px;
   background-color: rgb(202, 234, 220);
-  height: calc(100% + 70px);
+  height: calc(100% + 45px);
   border-radius: 8px;
-  bottom: -40px;
+  bottom: -26px;
   &:after {
     content: "";
     position: absolute;
     width: calc(100%);
     left: 0px;
     background-color: rgb(83, 117, 103);
-    height: 30px;
+    height: 20px;
     border-radius: 16px;
-    bottom: -10px;
+    bottom: -6px;
     z-index: -1;
   }
 }

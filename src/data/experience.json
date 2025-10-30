@@ -1,10 +1,18 @@
 [
   {
-    "initialDate": "July 2021",
+    "initialDate": "July 2024",
     "finalDate": "TODAY",
+    "jobTitle": "Senior Frontend Developer",
+    "companyName": "AKOYA",
+    "jobDescription": "Development of internal and external applications with a focus on crafting exceptional user experiences and interfaces. Building scalable solutions using modern web technologies, ensuring both functionality and aesthetic excellence for the company's digital ecosystem.",
+    "iconPath": "M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"
+  },
+  {
+    "initialDate": "July 2021",
+    "finalDate": "July 2024",
     "jobTitle": "Senior Developer",
     "companyName": "HUGE INC.",
-    "jobDescription": "Web developpent in front end for all the projects asigned in Huge inc using HTML, CSS, SASS, JavaScript and TypeScript using different frameworks such as React.js, Tailwind, Material, Sass, Gsap, Three.js.",
+    "jobDescription": "Web development in front end for all the projects assigned in Huge inc using HTML, CSS, SASS, JavaScript and TypeScript using different frameworks such as React.js, Tailwind, Material, Sass, Gsap, Three.js.",
     "iconPath": "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
   },
   {

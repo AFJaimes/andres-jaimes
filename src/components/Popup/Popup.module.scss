@@ -1,31 +1,205 @@
 @import "/assets/styles/styles.module.scss";
 
-.container {
-  width: calc(100vw - spacing(10));
-  max-width: calc(100vw - spacing(10));
-  height: calc(100vh - spacing(10));
-  max-height: calc(100vh - spacing(10));
-  padding: spacing(5);
-  background-color: rgba(0, 0, 0, 0.5);
+.backdrop {
   position: fixed;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: spacing(4);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
 }
 
-.open {
-  animation: open 1s ease-out forwards;
-}
-@keyframes open {
-  0% {
-    transformation: scale(0);
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
-    transformation: scale(1);
   }
 }
-.close {
-  display: none;
+
+.modal {
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 16px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  animation: slideUp 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: spacing(4) spacing(5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 82, 82, 0.2);
+    color: #ff5252;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline-offset: 2px;
+  }
+}
+
+.content {
+  padding: spacing(4);
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  // Custom scrollbar
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  // Asegurar que el contenido no desborde
+  > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  // Para componentes que necesitan altura completa (como DVD Screensaver)
+  > section {
+    flex: 1;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: spacing(2) auto;
+    border-radius: 8px;
+  }
+
+  // Estilos accesibles para links
+  a {
+    color: #6ee7b7; // Verde menta - alto contraste
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+    padding: spacing(1) 0;
+
+    &:hover {
+      color: #a7f3d0;
+      text-decoration-thickness: 2px;
+    }
+
+    &:focus {
+      outline: 2px solid #6ee7b7;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:visited {
+      color: #c4b5fd; // Lavanda para visitados
+    }
+  }
+
+  // Estilos para texto
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin-bottom: spacing(3);
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .backdrop {
+    padding: spacing(2);
+  }
+
+  .modal {
+    width: 95vw;
+    height: 90vh;
+    border-radius: 12px;
+  }
+
+  .header {
+    padding: spacing(3) spacing(4);
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    padding: spacing(3);
+
+    img,
+    video {
+      border-radius: 6px;
+    }
+  }
 }

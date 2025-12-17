@@ -27,6 +27,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/fincaraiz.png"
             text="Fincaraiz.com.co -> React"
+            title="Fincaraiz.com.co"
             component={<Fincaraiz />}
           />
         </Grid>
@@ -34,6 +35,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/nba75.png"
             text="NBA 75th anniversary pages"
+            title="NBA 75th Anniversary"
             component={<Nba />}
           />
         </Grid>
@@ -41,6 +43,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/xfinity.png"
             text="Xfinity showroom games"
+            title="Xfinity Showroom Games"
             component={<Xfinity />}
           />
         </Grid>
@@ -48,6 +51,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/stellantis.png"
             text="Stellantis group dynamic web ads"
+            title="Stellantis Dynamic Ads"
             component={<Xfinity />}
           />
         </Grid>
@@ -55,6 +59,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/abbvie.jpeg"
             text="ABBVIE - redesign"
+            title="AbbVie Global Redesign"
             component={<Abbvie />}
           />
         </Grid>
@@ -62,6 +67,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/arraysScreenshot.png"
             text="Arrays and objects showcase"
+            title="Arrays & Objects Showcase"
             component={<ArraysObjects />}
           />
         </Grid>
@@ -69,6 +75,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/flexbox.png"
             text="Flexbox Playground"
+            title="Flexbox Playground"
             component={<FlexboxPlayground />}
           />
         </Grid>
@@ -76,6 +83,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/animationsShowcase.png"
             text="Animations Playground Showcase"
+            title="CSS Animations Playground"
             component={<AnimationPlayground />}
           />
         </Grid>
@@ -83,6 +91,7 @@ const Projects: FunctionComponent = () => {
           <Card
             image="/dvdCard.png"
             text="DVD screensaver"
+            title="DVD Screensaver"
             component={<DvdScreensaver />}
           />
         </Grid>

@@ -1,22 +1,22 @@
 @import "/assets/styles/styles.module.scss";
 
 .root {
-  position: relative;
-  width: calc(100vw - spacing(10));
-  height: calc(100vh - spacing(10));
-  background-color: $darkMain;
-  overflow-y: scroll;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: spacing(3);
 }
 
-.images{
-  max-width: calc(100% - 20px);
-  padding:10px;
+.images {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
 }
 
-.text{
-  font-size: medium;
+.text {
+  font-size: 1rem;
   font-weight: normal;
-  padding: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
 }

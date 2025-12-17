@@ -1,5 +1,4 @@
-import useWindowSize from "hooks/useWindowSize";
-import { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent, useEffect, useState, useRef } from "react";
 import css from "./DvdScreensaver.module.scss";
 
 const randomColor = () => {
@@ -8,14 +7,43 @@ const randomColor = () => {
 };
 
 const DvdScreensaver: FunctionComponent = () => {
+  const containerRef = useRef<HTMLElement>(null);
   const [color, setColor] = useState("#fff");
   const [position, setPosition] = useState({ x: 10, y: 10 });
-  const { width, height } = useWindowSize();
+  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
   const [angle, setAngle] = useState(30);
   const initialAngle = 30;
   const [speed, setSpeed] = useState(5);
   const [lastBounce, setLastBounce] = useState("none");
   const [perfect, setPerfect] = useState(false);
+
+  // Medir el contenedor en lugar de la ventana
+  useEffect(() => {
+    const updateSize = () => {
+      if (containerRef.current) {
+        setContainerSize({
+          width: containerRef.current.offsetWidth,
+          height: containerRef.current.offsetHeight,
+        });
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    
+    // Observer para detectar cambios en el contenedor
+    const resizeObserver = new ResizeObserver(updateSize);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+
+    return () => {
+      window.removeEventListener("resize", updateSize);
+      resizeObserver.disconnect();
+    };
+  }, []);
+
+  const { width, height } = containerSize;
 
   useEffect(() => {
     let timer1 = setTimeout(
@@ -43,22 +71,26 @@ const DvdScreensaver: FunctionComponent = () => {
     }
   }, [perfect]);
 
+  // Dimensiones del logo (deben coincidir con CSS)
+  const logoWidth = 100;
+  const logoHeight = 50;
+
   useEffect(() => {
     if (
       width > 0 &&
       height > 0 &&
-      ((position.x + 160 >= width && position.y + 112 >= height) ||
+      ((position.x + logoWidth >= width && position.y + logoHeight >= height) ||
         (position.x <= 0 && position.y <= 0) ||
-        (position.x + 160 >= width && position.y <= 0) ||
-        (position.x <= 0 && position.y + 112 >= height))
+        (position.x + logoWidth >= width && position.y <= 0) ||
+        (position.x <= 0 && position.y + logoHeight >= height))
     ) {
       setPerfect(true);
     }
-    if (position.x + 160 >= width && width > 0 && lastBounce !== "right") {
+    if (position.x + logoWidth >= width && width > 0 && lastBounce !== "right") {
       setAngle(angle >= 90 ? 180 + initialAngle : 180 - initialAngle);
       setLastBounce("right");
     }
-    if (position.y + 112 >= height && height > 0 && lastBounce !== "top") {
+    if (position.y + logoHeight >= height && height > 0 && lastBounce !== "top") {
       setAngle(angle >= 90 ? 180 + initialAngle : 360 - initialAngle);
       setLastBounce("top");
     }
@@ -72,7 +104,7 @@ const DvdScreensaver: FunctionComponent = () => {
     }
   }, [angle, height, lastBounce, position.x, position.y, width]);
   return (
-    <section className={`${css.root} ${perfect && css.perfectBg}`}>
+    <section ref={containerRef} className={`${css.root} ${perfect && css.perfectBg}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"

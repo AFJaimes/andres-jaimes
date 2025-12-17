@@ -16,16 +16,18 @@ const Card: FunctionComponent<CardProps> = ({ ...card }) => {
           <img
             src={card.image}
             className={css.image}
-            alt="dvd screensaver minigame"
+            alt={card.title}
           />
           <span className={css.text}>{card.text}</span>
         </div>
       </div>
-      {popupOpen && (
-        <Popup open={popupOpen} handleClose={() => setPopupOpen(false)}>
-          {card.component}
-        </Popup>
-      )}
+      <Popup
+        open={popupOpen}
+        handleClose={() => setPopupOpen(false)}
+        title={card.title}
+      >
+        {card.component}
+      </Popup>
     </>
   );
 };

@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Andrés Felipe Jaimes Sánchez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Senior Frontend Developer | UI/UX Specialist**
 
-## Available Scripts
+🌐 [www.afjaimes.com](https://www.afjaimes.com)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 👨‍💻 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Computer Systems Engineer with a passion for crafting exceptional digital experiences. I specialize in creating intuitive user interfaces and engaging user experiences, bringing ideas to life through clean, efficient code at the intersection of design and development.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+My focus is on transforming concepts into visually stunning and functional applications, building interactive animations, responsive layouts, and seamless user flows that delight users while maintaining technical excellence.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💼 Professional Experience
 
-### `npm run build`
+### **Akoya** — *Senior Frontend Developer*
+**July 2024 - Present**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Development of internal and external applications with a focus on crafting exceptional user experiences and interfaces. Building scalable solutions using React, TypeScript, Next.js and GSAP for animations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **HUGE INC.** — *Senior Developer*
+**July 2021 - July 2024**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Web development in front end for all projects assigned using HTML, CSS, SASS, JavaScript and TypeScript with different frameworks such as React.js, Tailwind, Material, GSAP, and Three.js.
 
-### `npm run eject`
+### **Fincaraiz.com.co** — *Semi-senior Developer / SEO Analyst*
+**April 2016 - July 2021**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Web development using ASP.NET framework, C# and SQL Server. Front-end development in site migration using React and Next.js. SEO analysis and data interpretation to improve site ranking.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Languages & Frameworks:**
+- HTML, CSS, SASS
+- JavaScript, TypeScript
+- React.js, Next.js
+- C#, Visual Basic
+- SQL
 
-## Learn More
+**Libraries & Tools:**
+- Material-UI, Tailwind
+- GSAP, Three.js
+- jQuery, Bootstrap
+- ASP.NET
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Other Skills:**
+- Motion & Animation
+- SEO Analysis
+- Responsive Web Design
+- UI/UX Design
+- Scrum Master
+- Continuous Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🎨 Featured Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This portfolio showcases various projects including:
+- NBA 75th anniversary pages
+- Xfinity showroom games
+- Stellantis group dynamic web ads
+- ABBVIE redesign
+- Interactive CSS playgrounds
+- And more...
 
-### Analyzing the Bundle Size
+Visit [www.afjaimes.com](https://www.afjaimes.com) to explore all projects!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to reach out for collaborations, opportunities, or just to say hi!
 
-### Advanced Configuration
+🌐 **Website:** [www.afjaimes.com](https://www.afjaimes.com)  
+📧 **Email:** [andres_ja_sa@outlook.com](mailto:andres_ja_sa@outlook.com)  
+📱 **Phone:** +57 301 552 0340 (Colombia)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🚀 Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This portfolio is built with **Next.js**, **React**, **TypeScript**, and **SASS**.
 
-### `npm run build` fails to minify
+### Run locally:
+```bash
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Build for production:
+```bash
+npm run build
+```
+
+---
+
+*"Great code should not only work flawlessly but also look beautiful and feel intuitive."*

@@ -6,7 +6,7 @@ const About: FunctionComponent = () => {
   return (
     <section className={css.root}>
       <h2 className={css.header} title="about me">
-        <span>function About</span>
+        <span>const About</span>
         <span className={css.colorYellow}>{` = (`}</span>
         <span>me</span>
         <span className={css.colorYellow}>{`) `}</span>

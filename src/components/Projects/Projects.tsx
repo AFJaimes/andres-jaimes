@@ -10,6 +10,7 @@ import Nba from "./Nba/Nba";
 import css from "./Projects.module.scss";
 import Abbvie from "./Abbvie/Abbvie";
 import Xfinity from "./Xfinity/Xfinity";
+import Stellantis from "./Stellantis/Stellantis";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -52,7 +53,7 @@ const Projects: FunctionComponent = () => {
             image="/stellantis.png"
             text="Stellantis group dynamic web ads"
             title="Stellantis Dynamic Ads"
-            component={<Xfinity />}
+            component={<Stellantis />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>

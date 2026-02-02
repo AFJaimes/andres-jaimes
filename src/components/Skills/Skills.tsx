@@ -4,12 +4,12 @@ import css from "./Skills.module.scss";
 
 const Skills: FunctionComponent = () => {
   return (
-    <section className={css.root}>
-      <h2 className={css.title} title="skills">
+    <section className={css.root} aria-labelledby="skills-heading">
+      <h2 id="skills-heading" className={css.title} title="skills">
         <span className={css.colorBlue}>let</span>
         <span className={css.colorBlueLight}> Skills</span>
-        <span className={css.colorMain}> = </span>
-        <span className={css.brace}>{`{`}</span>
+        <span className={css.colorMain} aria-hidden="true"> = </span>
+        <span className={css.brace} aria-hidden="true">{`{`}</span>
       </h2>
       <div className={css.jsonContent}>
         {skills.map((skill, skillIndex) => {
@@ -34,7 +34,7 @@ const Skills: FunctionComponent = () => {
           );
         })}
       </div>
-      <span className={css.brace}>{`}`}</span>
+      <span className={css.brace} aria-hidden="true">{`}`}</span>
     </section>
   );
 };

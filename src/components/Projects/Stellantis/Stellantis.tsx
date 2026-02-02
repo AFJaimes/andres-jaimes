@@ -12,7 +12,12 @@ const Stellantis: FunctionComponent = () => {
         Developed interactive ad experiences featuring smooth motion design and
         responsive layouts for multiple car brands under the Stellantis umbrella.
       </p>
-      <img alt="Stellantis Dynamic Ads" className={css.images} src="stellantis.png" />
+      <img 
+        alt="Stellantis group dynamic web advertisements for automotive brands" 
+        className={css.images} 
+        src="stellantis.png"
+        loading="lazy"
+      />
     </section>
   );
 };

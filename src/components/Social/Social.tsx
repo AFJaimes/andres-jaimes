@@ -11,8 +11,9 @@ const Social: FunctionComponent = () => {
         rel="noopener noreferrer nofollow noindex"
         href="https://www.linkedin.com/in/afjaimes/"
         className={css.colorBlue}
+        aria-label="Visit my LinkedIn profile"
       >
-        <LinkedInIcon />
+        <LinkedInIcon aria-hidden="true" />
       </a>
       {' '}
       <a
@@ -20,8 +21,9 @@ const Social: FunctionComponent = () => {
         rel="noopener noreferrer nofollow noindex"
         href="https://github.com/AFJaimes"
         className={css.colorMain}
+        aria-label="Visit my GitHub profile"
       >
-        <GitHubIcon />
+        <GitHubIcon aria-hidden="true" />
       </a>
     </section>
   );

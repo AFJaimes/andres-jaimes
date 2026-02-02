@@ -17,9 +17,10 @@ const ArraysObjects: FunctionComponent = () => {
         Arrays and Objects in JS
         <br />
         <img
-          alt="animations playground showcase"
+          alt="CSS animations playground showcase screenshot"
           className={css.images}
           src="animationsShowcase.png"
+          loading="lazy"
         />
       </a>
     </section>

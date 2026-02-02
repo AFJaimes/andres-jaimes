@@ -6,28 +6,31 @@ const Nba: FunctionComponent = () => {
     <section className={`${css.root}`}>
       <p className={css.text}>Participated in the NBA 75th anniversary pages (/teaser, /explore, /archive-75, /75-stories, /finals, /team)</p>
       <a
-        title="NBA 75th anniversary"
         href="https://www.nba.com/75"
         target="_blank"
         rel="noindex nofollow noopener noreferrer"
+        aria-label="Visit NBA 75th anniversary website"
       >
         NBA 75th anniversary
       </a>
       
       <img
-        alt="nba teaser"
+        alt="NBA 75th anniversary teaser page"
         className={css.images}
         src="Nba1.png"
+        loading="lazy"
       />
       <img
-        alt="nba explore page"
+        alt="NBA 75th anniversary explore page"
         className={css.images}
         src="NBAExplore.png"
+        loading="lazy"
       />
       <img
-        alt="nba final moments"
+        alt="NBA 75th anniversary final moments page"
         className={css.images}
         src="Nba2.png"
+        loading="lazy"
       />
     </section>
   );

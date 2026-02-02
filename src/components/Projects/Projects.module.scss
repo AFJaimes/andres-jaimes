@@ -19,6 +19,10 @@
 .title {
   color: var(--color-accent-blue, $blue);
   transition: color 0.3s ease;
+  font-size: spacing(4);
+  font-weight: bold;
+  margin: 0;
+  display: inline;
 }
 
 .titleSecondary {

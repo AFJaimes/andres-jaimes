@@ -11,7 +11,8 @@ const Experience: FunctionComponent = () => {
   const { width } = useWindowSize();
 
   return (
-    <section className={css.root}>
+    <section className={css.root} aria-labelledby="experience-heading">
+      <h2 id="experience-heading" className="sr-only">Work Experience</h2>
       <section className={css.container}>
         {experience.map((job, index) => {
           return (

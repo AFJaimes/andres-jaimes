@@ -16,14 +16,16 @@ import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
   return (
-    <section className={css.root}>
+    <section className={css.root} aria-labelledby="projects-heading">
       <Grid container className={css.gridContainer}>
         <Grid item sm={12} className={css.titleContainer}>
-          <span className={css.title}>Other Works</span>
-          <span className={css.titleSecondary}>
-            {" // "}
-            Hobbie Projects
-          </span>
+          <h2 id="projects-heading" className={css.title}>
+            <span>Other Works</span>
+            <span className={css.titleSecondary} aria-label="Hobby Projects">
+              {" // "}
+              Hobbie Projects
+            </span>
+          </h2>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Card

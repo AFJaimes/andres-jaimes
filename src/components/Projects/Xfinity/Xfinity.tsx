@@ -9,30 +9,49 @@ const Xfinity: FunctionComponent = () => {
         Xfinity minigames showcase room
       </p>
       <a
-        title="Abbvie Global"
         href="https://www.lbbonline.com/news/xfinitys-new-in-store-gaming-experience-aims-to-change-the-way-customers-interact-with-xfinity-retail-stores/"
         target="_blank"
         rel="noindex nofollow noopener noreferrer"
+        aria-label="Read article about Xfinity's New In-Store Gaming Experience"
       >
         Xfinity's New In-Store Gaming Experience Aims to Change the Way
         Customers Interact with Xfinity Retail Stores
       </a>
       <br />
       <a
-        title="Abbvie Global"
         href="https://elephant.is/article/xfinity-campaign/"
         target="_blank"
         rel="noindex nofollow noopener noreferrer"
+        aria-label="Read article about Xfinity Gamifies In-Person Shopping"
       >
         Xfinity Gamifies In-Person Shopping in over 150 Stores
       </a>
 
-      <img alt="Xfinity minigames" className={css.images} src="xfinity.jpeg" />
-      <video width="600" controls loop muted className={css.images}>
+      <img 
+        alt="Xfinity showroom minigames showcase" 
+        className={css.images} 
+        src="xfinity.jpeg"
+        loading="lazy"
+      />
+      <video 
+        width="600" 
+        controls 
+        loop 
+        muted 
+        className={css.images}
+        aria-label="Xfinity showroom games demonstration video 1"
+      >
         <source src="xfinity1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <video width="600" controls loop muted className={css.images}>
+      <video 
+        width="600" 
+        controls 
+        loop 
+        muted 
+        className={css.images}
+        aria-label="Xfinity showroom games demonstration video 2"
+      >
         <source src="xfinity2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

@@ -4,16 +4,16 @@ import Pointer from "components/Pointer/Pointer";
 
 const About: FunctionComponent = () => {
   return (
-    <section className={css.root}>
-      <h2 className={css.header} title="about me">
+    <section className={css.root} aria-labelledby="about-heading">
+      <h2 id="about-heading" className={css.header} title="about me">
         <span>const About</span>
-        <span className={css.colorYellow}>{` = (`}</span>
+        <span className={css.colorYellow} aria-hidden="true">{` = (`}</span>
         <span>me</span>
-        <span className={css.colorYellow}>{`) `}</span>
-        <span className={css.colorWhite}>{`=>`}</span>
-        <span className={`${css.colorYellow} ${css.key}`}>{` {`}</span>
+        <span className={css.colorYellow} aria-hidden="true">{`) `}</span>
+        <span className={css.colorWhite} aria-hidden="true">{`=>`}</span>
+        <span className={`${css.colorYellow} ${css.key}`} aria-hidden="true">{` {`}</span>
       </h2>
-      <span className={css.colorImport}>
+      <span className={css.colorImport} aria-hidden="true">
         <b>return (`</b>
       </span>
       <article>

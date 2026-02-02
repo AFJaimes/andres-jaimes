@@ -7,32 +7,37 @@ const Fincaraiz: FunctionComponent = () => {
       <p className={css.text}>
         I participated in the migration of the portal <b>Fincaraiz.com.co from ASP.net to React</b>
       </p>
-      <span >Old Layout</span>
+      <h3>Old Layout</h3>
       <img
-        alt="fincaraiz.com.co old layout"
+        alt="Fincaraiz.com.co old layout homepage"
         className={css.images}
         src="fincaraizOld.png"
+        loading="lazy"
       />
       <img
-        alt="fincaraiz.com.co old page results"
+        alt="Fincaraiz.com.co old layout search results page"
         className={css.images}
         src="fincaraizOld2.png"
+        loading="lazy"
       />
-      <span >New Layout</span>
+      <h3>New Layout</h3>
       <img
-        alt="fincaraiz.com.co new page home"
+        alt="Fincaraiz.com.co new layout homepage"
         className={css.images}
         src="fincaraizNew1.png"
+        loading="lazy"
       />
       <img
-        alt="fincaraiz.com.co old page results"
+        alt="Fincaraiz.com.co new layout search results page"
         className={css.images}
         src="fincaraizNew2.png"
+        loading="lazy"
       />
       <img
-        alt="fincaraiz.com.co old page advert"
+        alt="Fincaraiz.com.co new layout advertisement page"
         className={css.images}
         src="fincaraizNew3.png"
+        loading="lazy"
       />
     </section>
   );

@@ -16,9 +16,10 @@ const FlexboxPlayground: FunctionComponent = () => {
         Flexbox Playground (React)
         <br />
         <img
-          alt="flexbox shwocase"
+          alt="Flexbox playground showcase screenshot"
           className={css.images}
           src="flexbox.png"
+          loading="lazy"
         />
       </a>
     </section>

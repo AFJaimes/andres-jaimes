@@ -7,13 +7,14 @@
   align-items: center;
   justify-content: center;
   font-family: "Fira Code", monospace;
-  padding-top: spacing(10);
+  padding-top: spacing(12);
   padding-bottom: spacing(10);
   padding-left: spacing(3);
   padding-right: spacing(3);
-  background-color: $darkMain;
-  color: $colorMain;
+  background-color: var(--color-bg-main, $darkMain);
+  color: var(--color-text-secondary, $colorMain);
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
@@ -21,7 +22,8 @@
   font-weight: 500;
   margin-bottom: 0;
   margin-top: 0;
-  color: $colorComponent;
+  color: var(--color-component, $colorComponent);
+  transition: color 0.3s ease;
   @media (max-width: 570px) {
     padding-top: 0;
   }
@@ -41,7 +43,8 @@
 
 .propsText {
   font-family: "Fira Code", monospace;
-  color: $colorSecondary;
+  color: var(--color-accent-blue-light, $colorSecondary);
+  transition: color 0.3s ease;
 }
 
 .keysContainer {

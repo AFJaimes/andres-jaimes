@@ -1,6 +1,6 @@
 [
   {
-    "title": "Languajes",
+    "title": "Languages",
     "content": [
       "HTML",
       "CSS",
@@ -18,12 +18,32 @@
     "title": "Frameworks",
     "content": [
       "Material-UI",
+      "Tailwind CSS",
       "GSAP",
       "Three.js",
       "jQuery",
-      "Boostrap",
+      "Bootstrap",
       "Material Design",
       "ASP.NET"
+    ]
+  },
+  {
+    "title": "Design Systems",
+    "content": [
+      "Design Tokens",
+      "Component Libraries",
+      "Style Guides",
+      "Design Patterns"
+    ]
+  },
+  {
+    "title": "AI & Development Tools",
+    "content": [
+      "Cursor AI",
+      "Prompt Engineering",
+      "Git",
+      "GitHub",
+      "CI/CD"
     ]
   },
   {
@@ -33,7 +53,7 @@
       "Procreate",
       "SQL Server",
       "Google Analytics",
-      "Google DataSudio",
+      "Google DataStudio",
       "Adobe After Effects",
       "Adobe Illustrator",
       "ScreamingFrog",
@@ -43,12 +63,12 @@
   {
     "title": "Others",
     "content": [
-      "Motion",
-      "SEO analysis",
+      "Motion Design",
+      "SEO Analysis",
       "Testing",
-      "Requirements gathering",
-      "Responsive web design",
-      "Continous Integration",
+      "Requirements Gathering",
+      "Responsive Web Design",
+      "UI/UX Design",
       "Scrum Master"
     ]
   }

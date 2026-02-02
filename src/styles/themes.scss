@@ -1,0 +1,136 @@
+:root[data-theme="dark"] {
+  --color-bg-main: #1e1e1e;
+  --color-bg-strong: #252526;
+  --color-bg-light: #2d2d30;
+  --color-text-primary: #d4d4d4;
+  --color-text-secondary: #969696;
+  --color-accent-blue: #569cd6;
+  --color-accent-blue-light: #9cdcfe;
+  --color-accent-green: #4ec9b0;
+  --color-accent-green-dark: #6a9955;
+  --color-accent-red: #f48771;
+  --color-accent-red-dark: #d16969;
+  --color-accent-purple: #c586c0;
+  --color-accent-yellow: #dcdcaa;
+  --color-comment: #6a9955;
+  --color-component: #4ec9b0;
+  --color-chip-bg: #252526;
+  
+  /* Popup IDE Theme Colors - VS Code Dark+ */
+  --popup-bg-main: #1e1e1e;
+  --popup-bg-editor: #252526;
+  --popup-bg-header: #2d2d30;
+  --popup-border: #3e3e42;
+  --popup-text-primary: #cccccc;
+  --popup-text-secondary: #969696;
+  --popup-scrollbar-track: #1e1e1e;
+  --popup-scrollbar-thumb: #424242;
+  --popup-scrollbar-thumb-hover: #4e4e4e;
+  --popup-link: #4ec9b0;
+  --popup-link-hover: #6ee7b7;
+  --popup-close-hover: #f48771;
+}
+
+:root[data-theme="light"] {
+  --color-bg-main: #ffffff;
+  --color-bg-strong: #f8f8f8;
+  --color-bg-light: #f3f3f3;
+  --color-text-primary: #0d1117;
+  --color-text-secondary: #656d76;
+  --color-accent-blue: #0969da;
+  --color-accent-blue-light: #218bff;
+  --color-accent-green: #1a7f37;
+  --color-accent-green-dark: #116329;
+  --color-accent-red: #cf222e;
+  --color-accent-red-dark: #a40e26;
+  --color-accent-purple: #8250df;
+  --color-accent-yellow: #9a6700;
+  --color-comment: #656d76;
+  --color-component: #1a7f37;
+  --color-chip-bg: #e1e4e8;
+  
+  /* Popup Light Theme Colors - VS Code Light+ */
+  --popup-bg-main: #ffffff;
+  --popup-bg-editor: #ffffff;
+  --popup-bg-header: #f6f8fa;
+  --popup-border: #d0d7de;
+  --popup-text-primary: #0d1117;
+  --popup-text-secondary: #656d76;
+  --popup-scrollbar-track: #f6f8fa;
+  --popup-scrollbar-thumb: #d0d7de;
+  --popup-scrollbar-thumb-hover: #afb8c1;
+  --popup-link: #0969da;
+  --popup-link-hover: #218bff;
+  --popup-close-hover: #cf222e;
+}
+
+:root[data-theme="walnut"] {
+  --color-bg-main: #2a2418;
+  --color-bg-strong: #1f1a12;
+  --color-bg-light: #352d20;
+  --color-text-primary: #f0e6d4;
+  --color-text-secondary: #c4a876;
+  --color-accent-blue: #6bb3e8;
+  --color-accent-blue-light: #9cdcfe;
+  --color-accent-green: #7dd3a0;
+  --color-accent-green-dark: #5fb884;
+  --color-accent-red: #f48771;
+  --color-accent-red-dark: #d16969;
+  --color-accent-purple: #c586c0;
+  --color-accent-yellow: #ffd700;
+  --color-comment: #6a9955;
+  --color-component: #7dd3a0;
+  --color-chip-bg: #1f1a12;
+  
+  /* Popup IDE Theme Colors - Walnut */
+  --popup-bg-main: #1f1a12;
+  --popup-bg-editor: #2a2418;
+  --popup-bg-header: #352d20;
+  --popup-border: #4a3f2d;
+  --popup-text-primary: #f0e6d4;
+  --popup-text-secondary: #c4a876;
+  --popup-scrollbar-track: #1f1a12;
+  --popup-scrollbar-thumb: #4a3f2d;
+  --popup-scrollbar-thumb-hover: #5a4f3d;
+  --popup-link: #6bb3e8;
+  --popup-link-hover: #9cdcfe;
+  --popup-close-hover: #f48771;
+}
+
+:root[data-theme="grape"] {
+  --color-bg-main: #2a1f2e;
+  --color-bg-strong: #1f1523;
+  --color-bg-light: #35283a;
+  --color-text-primary: #e8d4f0;
+  --color-text-secondary: #b895c8;
+  --color-accent-blue: #7dc4e8;
+  --color-accent-blue-light: #a8d8f8;
+  --color-accent-green: #6ee7b7;
+  --color-accent-green-dark: #4ec9b0;
+  --color-accent-red: #f48771;
+  --color-accent-red-dark: #d16969;
+  --color-accent-purple: #c586c0;
+  --color-accent-yellow: #ffd700;
+  --color-comment: #6a9955;
+  --color-component: #c586c0;
+  --color-chip-bg: #1f1523;
+  
+  /* Popup IDE Theme Colors - Grape */
+  --popup-bg-main: #1f1523;
+  --popup-bg-editor: #2a1f2e;
+  --popup-bg-header: #35283a;
+  --popup-border: #4a3f4d;
+  --popup-text-primary: #e8d4f0;
+  --popup-text-secondary: #b895c8;
+  --popup-scrollbar-track: #1f1523;
+  --popup-scrollbar-thumb: #4a3f4d;
+  --popup-scrollbar-thumb-hover: #5a4f5d;
+  --popup-link: #7dc4e8;
+  --popup-link-hover: #a8d8f8;
+  --popup-close-hover: #f48771;
+}
+
+:root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+

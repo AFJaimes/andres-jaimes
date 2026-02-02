@@ -3,20 +3,23 @@
 .root {
   padding: spacing(3);
   text-align: justify;
-  background-color: $darkStrong;
-  color: $white;
+  background-color: var(--color-bg-strong, $darkStrong);
+  color: var(--color-text-primary, $white);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
   margin-bottom: spacing(1);
   font-weight: 500;
-  color: $colorSecondary;
+  color: var(--color-accent-blue-light, $colorSecondary);
+  transition: color 0.3s ease;
 }
 
 .description {
-  color: $yellow;
+  color: var(--color-accent-yellow, $yellow);
   padding-left: spacing(4);
   font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 .key {

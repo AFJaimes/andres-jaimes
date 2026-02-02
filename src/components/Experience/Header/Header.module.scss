@@ -1,6 +1,7 @@
 @import "/assets/styles/styles.module.scss";
 
 .job{
-  color:$blueLight;
+  color: var(--color-accent-blue-light, $blueLight);
   font-weight: bold;
+  transition: color 0.3s ease;
 }

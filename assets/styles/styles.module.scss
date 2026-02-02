@@ -4,28 +4,35 @@
 @import "./typography.module.scss";
 
 .colorMain {
-  color: $colorMain;
+  color: var(--color-text-secondary, $colorMain);
+  transition: color 0.3s ease;
 }
 
 .colorImport {
-  color: $purple;
+  color: var(--color-accent-purple, $purple);
+  transition: color 0.3s ease;
 }
 
 .colorWhite {
-  color: $white;
+  color: var(--color-text-primary, $white);
+  transition: color 0.3s ease;
 }
 
 .colorYellow {
-  color: $yellow;
+  color: var(--color-accent-yellow, $yellow);
+  transition: color 0.3s ease;
 }
 
 .colorBlue {
-  color: $blue;
+  color: var(--color-accent-blue, $blue);
+  transition: color 0.3s ease;
 }
 .colorBlueLight {
-  color: $blueLight;
+  color: var(--color-accent-blue-light, $blueLight);
+  transition: color 0.3s ease;
 }
 
 .colorGreen {
-  color: $green;
+  color: var(--color-accent-green, $green);
+  transition: color 0.3s ease;
 }

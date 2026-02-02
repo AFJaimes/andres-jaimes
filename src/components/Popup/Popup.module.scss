@@ -3,7 +3,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -11,6 +11,7 @@
   padding: spacing(4);
   z-index: 1000;
   animation: fadeIn 0.2s ease-out;
+  transition: background-color 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -23,16 +24,18 @@
 }
 
 .modal {
-  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
-  border-radius: 16px;
+  background: var(--popup-bg-editor, #252526);
+  border: 1px solid var(--popup-border, #3e3e42);
+  border-radius: 8px;
   width: 80vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px var(--popup-border, #3e3e42);
   animation: slideUp 0.3s ease-out;
   overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 @keyframes slideUp {
@@ -50,37 +53,39 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: spacing(4) spacing(5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.2);
+  padding: spacing(3) spacing(4);
+  border-bottom: 1px solid var(--popup-border, #3e3e42);
+  background: var(--popup-bg-header, #2d2d30);
   flex-shrink: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .title {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -0.02em;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--popup-text-primary, #cccccc);
+  letter-spacing: -0.01em;
+  font-family: "Fira Code", monospace;
+  transition: color 0.3s ease;
 }
 
 .closeBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border: none;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--popup-text-secondary, #858585);
   cursor: pointer;
   transition: all 0.2s ease;
 
   &:hover {
-    background: rgba(255, 82, 82, 0.2);
-    color: #ff5252;
-    transform: scale(1.05);
+    background: var(--popup-bg-main, #1e1e1e);
+    color: var(--popup-close-hover, #f48771);
   }
 
   &:active {
@@ -88,7 +93,7 @@
   }
 
   &:focus {
-    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline: 2px solid var(--color-accent-blue, #487bc7);
     outline-offset: 2px;
   }
 }
@@ -100,23 +105,27 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  background: var(--popup-bg-editor, #252526);
+  transition: background-color 0.3s ease;
 
-  // Custom scrollbar
+  // Custom scrollbar - IDE style
   &::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
 
   &::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
+    background: var(--popup-scrollbar-track, #1e1e1e);
+    border-left: 1px solid var(--popup-border, #3e3e42);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    background: var(--popup-scrollbar-thumb, #424242);
+    border-radius: 0;
+    border-left: 1px solid var(--popup-border, #3e3e42);
+    transition: background-color 0.2s ease;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: var(--popup-scrollbar-thumb-hover, #4e4e4e);
     }
   }
 
@@ -140,37 +149,37 @@
     border-radius: 8px;
   }
 
-  // Estilos accesibles para links
+  // Estilos accesibles para links - IDE style
   a {
-    color: #6ee7b7; // Verde menta - alto contraste
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    font-weight: 500;
+    color: var(--popup-link, #4ec9b0);
+    text-decoration: none;
+    font-weight: 400;
     transition: all 0.2s ease;
     display: inline-block;
-    padding: spacing(1) 0;
+    border-bottom: 1px solid transparent;
 
     &:hover {
-      color: #a7f3d0;
-      text-decoration-thickness: 2px;
+      color: var(--popup-link-hover, #6ee7b7);
+      border-bottom-color: var(--popup-link-hover, #6ee7b7);
     }
 
     &:focus {
-      outline: 2px solid #6ee7b7;
-      outline-offset: 4px;
-      border-radius: 4px;
+      outline: 2px solid var(--color-accent-blue, #487bc7);
+      outline-offset: 2px;
+      border-radius: 2px;
     }
 
     &:visited {
-      color: #c4b5fd; // Lavanda para visitados
+      color: var(--color-accent-purple, #b589bd);
     }
   }
 
-  // Estilos para texto
+  // Estilos para texto - IDE style
   p {
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.7;
+    color: var(--popup-text-primary, #cccccc);
+    line-height: 1.6;
     margin-bottom: spacing(3);
+    transition: color 0.3s ease;
   }
 }
 

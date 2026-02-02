@@ -2,12 +2,13 @@
 
 .root {
   padding: spacing(0);
-  color: $white;
-  background-color: $darkStrong;
+  color: var(--color-text-primary, $white);
+  background-color: var(--color-bg-strong, $darkStrong);
   font-size: spacing(4);
   font-weight: bold;
   text-align: center;
   padding-top: spacing(4);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .titleContainer {
@@ -16,11 +17,13 @@
 }
 
 .title {
-  color: $blue;
+  color: var(--color-accent-blue, $blue);
+  transition: color 0.3s ease;
 }
 
 .titleSecondary {
-  color: $greenDark;
+  color: var(--color-accent-green-dark, $greenDark);
+  transition: color 0.3s ease;
 }
 
 .gridContainer{

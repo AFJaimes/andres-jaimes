@@ -1,26 +1,29 @@
 @import "/assets/styles/styles.module.scss";
 
 .icon {
-  fill: $yellow;
+  fill: var(--color-accent-yellow, $yellow);
   width: spacing(4);
   height: spacing(4);
+  transition: fill 0.3s ease;
 }
 
 .circle {
   width: spacing(4);
   height: spacing(4);
-  border-color: $whiteDark;
+  border-color: var(--color-text-secondary, $whiteDark);
   display: flex;
   padding: 4px;
   align-self: baseline;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
+  transition: border-color 0.3s ease;
 }
 
 .line{
   width: 2px;
   flex-grow: 1;
-  background-color: $whiteDark;
+  background-color: var(--color-text-secondary, $whiteDark);
+  transition: background-color 0.3s ease;
 }
 

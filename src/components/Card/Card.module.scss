@@ -3,17 +3,19 @@
 .container {
   padding: spacing(2);
   font-size: spacing(2.5);
-  color: $purple;
+  color: var(--color-accent-purple, $purple);
   font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 .innerContainer {
   overflow: hidden;
-  border: 2px solid $green;
+  border: 2px solid var(--color-accent-green, $green);
   border-radius: spacing(4);
   cursor: pointer;
-  background-color: $darkLight;
+  background-color: var(--color-bg-light, $darkLight);
   padding-bottom: spacing(1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 
   &.noPopup {
     cursor: default;

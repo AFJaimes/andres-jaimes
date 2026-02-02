@@ -11,6 +11,7 @@ import css from "./Projects.module.scss";
 import Abbvie from "./Abbvie/Abbvie";
 import Xfinity from "./Xfinity/Xfinity";
 import Stellantis from "./Stellantis/Stellantis";
+import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -94,6 +95,14 @@ const Projects: FunctionComponent = () => {
             text="DVD screensaver"
             title="DVD Screensaver"
             component={<DvdScreensaver />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            text="Pure CSS keyboard showcase"
+            title="Pure CSS Keyboard Showcase"
+            component={<KeyboardShowcase />}
+            noPopup={true}
           />
         </Grid>
       </Grid>

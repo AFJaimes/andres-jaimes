@@ -14,9 +14,21 @@
   cursor: pointer;
   background-color: $darkLight;
   padding-bottom: spacing(1);
+
+  &.noPopup {
+    cursor: default;
+  }
 }
 
 .image {
   border-radius: spacing(2);
   width: 100%;
+}
+
+.noImageContainer {
+  padding: spacing(3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
 }

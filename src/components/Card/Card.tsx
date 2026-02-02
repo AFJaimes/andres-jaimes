@@ -6,28 +6,42 @@ import Popup from "components/Popup/Popup";
 const Card: FunctionComponent<CardProps> = ({ ...card }) => {
   const [popupOpen, setPopupOpen] = useState(false);
   const handleClick = () => {
-    setPopupOpen(true);
+    if (!card.noPopup) {
+      setPopupOpen(true);
+    }
   };
 
   return (
     <>
       <div className={css.container}>
-        <div className={css.innerContainer} onClick={handleClick}>
-          <img
-            src={card.image}
-            className={css.image}
-            alt={card.title}
-          />
+        <div 
+          className={`${css.innerContainer} ${card.noPopup ? css.noPopup : ''}`}
+          onClick={handleClick}
+        >
+          {card.image && (
+            <img
+              src={card.image}
+              className={css.image}
+              alt={card.title}
+            />
+          )}
+          {!card.image && (
+            <div className={css.noImageContainer}>
+              {card.component}
+            </div>
+          )}
           <span className={css.text}>{card.text}</span>
         </div>
       </div>
-      <Popup
-        open={popupOpen}
-        handleClose={() => setPopupOpen(false)}
-        title={card.title}
-      >
-        {card.component}
-      </Popup>
+      {!card.noPopup && (
+        <Popup
+          open={popupOpen}
+          handleClose={() => setPopupOpen(false)}
+          title={card.title}
+        >
+          {card.component}
+        </Popup>
+      )}
     </>
   );
 };

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useLanguage } from "contexts/LanguageContext";
 import Header from "components/Header/Header";
 import Skills from "components/Skills/Skills";
 import Grid from "@material-ui/core/Grid";
@@ -9,14 +10,17 @@ import Projects from "components/Projects/Projects";
 
 const siteUrl = "https://www.afjaimes.com";
 const siteName = "Andrés Felipe Jaimes Sánchez";
-const description = "Senior Frontend Developer & UI/UX Specialist. Computer Systems Engineer specializing in React, TypeScript, Next.js, and creating exceptional digital experiences.";
-const keywords = "frontend developer, react developer, typescript, next.js, UI/UX designer, web developer, software engineer, frontend engineer, react.js, javascript developer";
 
 export default function Home() {
+  const { t, language } = useLanguage();
+  const description = t("meta.description");
+  const keywords = t("meta.keywords");
+  const title = t("meta.title");
+
   return (
     <>
       <Head>
-        <title>{siteName} | Senior Frontend Developer & UI/UX Specialist</title>
+        <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta name="author" content={siteName} />
@@ -27,15 +31,15 @@ export default function Home() {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:title" content={`${siteName} | Senior Frontend Developer`} />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale" content={language === "es" ? "es_ES" : "en_US"} />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={siteUrl} />
-        <meta name="twitter:title" content={`${siteName} | Senior Frontend Developer`} />
+        <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         
         {/* Additional SEO */}
@@ -43,7 +47,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </Head>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <a href="#main-content" className="skip-link">{t("common.skipToContent")}</a>
       <div>
         <Header />
         <Divider />

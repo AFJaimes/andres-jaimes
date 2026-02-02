@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { useLanguage } from "contexts/LanguageContext";
 import experience from "data/experience.json";
 import css from "./Experience.module.scss";
 import Header from "./Header/Header";
@@ -7,22 +8,37 @@ import TimelineIcon from "./TimelineIcon/TimelineIcon";
 import useWindowSize from "hooks/useWindowSize";
 import ArrowDownward from "@material-ui/icons/ArrowDownward";
 
+const companyKeyMap: Record<string, string> = {
+  "BairesDev": "bairesdev",
+  "HUGE INC.": "huge",
+  "FINCARAIZ.COM.CO": "fincaraiz",
+  "ISMOCOL S.A": "ismocol",
+  "BUCARAMANGA CITY HALL": "bucaramanga",
+  "IMAGENGROUP": "imagengroup",
+};
+
 const Experience: FunctionComponent = () => {
   const { width } = useWindowSize();
+  const { t } = useLanguage();
 
   return (
     <section className={css.root} aria-labelledby="experience-heading">
-      <h2 id="experience-heading" className="sr-only">Work Experience</h2>
+      <h2 id="experience-heading" className="sr-only">{t("experience.workExperience")}</h2>
       <section className={css.container}>
         {experience.map((job, index) => {
+          const companyKey = companyKeyMap[job.companyName] || "";
+          const translatedJobTitle = companyKey ? t(`experience.jobs.${companyKey}.jobTitle`) : job.jobTitle;
+          const translatedDescription = companyKey ? t(`experience.jobs.${companyKey}.description`) : job.jobDescription;
+          const finalDate = job.finalDate === "TODAY" ? t("experience.today") : job.finalDate;
+
           return (
             <>
               <div className={css.jobContainer}>
                 <div className={css.header}>
                   <Header
                     initialDate={job.initialDate}
-                    finalDate={job.finalDate}
-                    job={job.jobTitle}
+                    finalDate={finalDate}
+                    job={translatedJobTitle}
                   />
                 </div>
                 {width > 650 && (
@@ -35,7 +51,7 @@ const Experience: FunctionComponent = () => {
                 )}
                 <div className={css.job}>
                   <Job
-                    description={job.jobDescription}
+                    description={translatedDescription}
                     jobTitle={job.companyName}
                   />
                 </div>

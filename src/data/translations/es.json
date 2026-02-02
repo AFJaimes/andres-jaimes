@@ -1,0 +1,112 @@
+{
+  "header": {
+    "softwareEngineer": "Ingeniero de Sistemas",
+    "catLover": "Amante de los Gatos"
+  },
+  "about": {
+    "description": "Como Ingeniero de Sistemas con pasión por crear experiencias digitales excepcionales, me especializo en crear interfaces de usuario intuitivas y experiencias de usuario atractivas. Me especializo en la intersección entre el diseño y el desarrollo, donde doy vida a las ideas a través de código limpio y eficiente.\n\nMe motiva el desafío de transformar conceptos en aplicaciones visualmente impresionantes y funcionales. Ya sea construyendo animaciones interactivas, diseños responsivos o flujos de usuario fluidos, mi enfoque siempre está en crear experiencias memorables que deleiten a los usuarios mientras mantengo la excelencia técnica.\n\nMi enfoque combina tecnologías web modernas con resolución creativa de problemas, explorando constantemente nuevas herramientas y técnicas para ampliar los límites de lo que es posible en el desarrollo front-end. Creo que un gran código no solo debe funcionar perfectamente, sino también verse hermoso y sentirse intuitivo"
+  },
+  "experience": {
+    "today": "HOY",
+    "workExperience": "Experiencia Laboral",
+    "jobs": {
+      "bairesdev": {
+        "jobTitle": "Desarrollador Frontend Senior",
+        "description": "Desarrollo de aplicaciones internas y externas con enfoque en crear experiencias e interfaces de usuario excepcionales. Construcción de soluciones escalables usando React, TypeScript, Next.js y GSAP para animaciones, asegurando tanto funcionalidad como excelencia estética para el ecosistema digital de la empresa."
+      },
+      "huge": {
+        "jobTitle": "Desarrollador Senior",
+        "description": "Desarrollo web en front end para todos los proyectos asignados en Huge inc usando HTML, CSS, SASS, JavaScript y TypeScript usando diferentes frameworks como React.js, Tailwind, Material, Sass, Gsap, Three.js."
+      },
+      "fincaraiz": {
+        "jobTitle": "Desarrollador Semi-senior / Analista SEO",
+        "description": "Desarrollo web usando framework ASP.NET visual, lenguaje C# y bases de datos SQL server, desarrollo front end en la migración del sitio usando React y Nextjs, también usando conocimiento de Optimización de Motores de Búsqueda e interpretación de datos para mejorar el ranking de Fincaraiz.com.co"
+      },
+      "ismocol": {
+        "jobTitle": "Ingeniero de Sistemas",
+        "description": "Desarrollo de software de escritorio con framework ASP.NET, lenguaje Visual Basic y bases de datos SQL server, Desarrollo del sistema de control activo e inventario de los almacenes, aplicación web de aprobación de requisiciones y órdenes de compra, módulo de envío masivo de correos para información de nómina, codificación de doble verificación de certificados de trabajo con código QR, aplicación web responsiva para consulta de materiales"
+      },
+      "bucaramanga": {
+        "jobTitle": "Desarrollador web",
+        "description": "Proporcionar servicios de programación y desarrollo de software para mejorar actividades relacionadas con procedimientos y servicios de política gubernamental en línea y desarrollo web en framework ASP.NET con lenguaje C# y bases de datos SQL server para la plataforma tecnológica de la ciudad de Bucaramanga"
+      },
+      "imagengroup": {
+        "jobTitle": "Asistente de sistemas",
+        "description": "Mantenimiento y desarrollo de páginas web"
+      }
+    }
+  },
+  "projects": {
+    "otherWorks": "Otros Trabajos",
+    "hobbyProjects": "Proyectos de Hobby",
+    "fincaraiz": {
+      "text": "Fincaraiz.com.co -> React",
+      "title": "Fincaraiz.com.co"
+    },
+    "nba": {
+      "text": "Páginas del 75 aniversario de la NBA",
+      "title": "75 Aniversario de la NBA"
+    },
+    "xfinity": {
+      "text": "Juegos del showroom de Xfinity",
+      "title": "Juegos del Showroom de Xfinity"
+    },
+    "stellantis": {
+      "text": "Anuncios web dinámicos del grupo Stellantis",
+      "title": "Anuncios Dinámicos de Stellantis"
+    },
+    "abbvie": {
+      "text": "ABBVIE - rediseño",
+      "title": "Rediseño Global de AbbVie"
+    },
+    "arraysObjects": {
+      "text": "Showcase de arrays y objetos",
+      "title": "Showcase de Arrays y Objetos"
+    },
+    "flexbox": {
+      "text": "Playground de Flexbox",
+      "title": "Playground de Flexbox"
+    },
+    "animations": {
+      "text": "Showcase del Playground de Animaciones",
+      "title": "Playground de Animaciones CSS"
+    },
+    "dvd": {
+      "text": "Screensaver de DVD",
+      "title": "Screensaver de DVD"
+    },
+    "keyboard": {
+      "text": "Showcase de teclado en CSS puro",
+      "title": "Showcase de Teclado CSS Puro"
+    }
+  },
+  "skills": {
+    "languages": "Lenguajes",
+    "frameworks": "Frameworks",
+    "designSystems": "Sistemas de Diseño",
+    "aiTools": "IA y Herramientas de Desarrollo",
+    "tools": "Herramientas",
+    "others": "Otros"
+  },
+  "social": {
+    "linkedin": "Visita mi perfil de LinkedIn",
+    "github": "Visita mi perfil de GitHub"
+  },
+  "theme": {
+    "selectTheme": "Seleccionar tema",
+    "selectLanguage": "Seleccionar idioma",
+    "light": "☀️ Claro",
+    "dark": "🌙 Oscuro",
+    "walnut": "🌰 Nogal",
+    "grape": "🍇 Uva"
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "meta": {
+    "title": "Andrés Felipe Jaimes Sánchez | Desarrollador Frontend Senior y Especialista en UI/UX",
+    "description": "Desarrollador Frontend Senior y Especialista en UI/UX. Ingeniero de Sistemas especializado en React, TypeScript, Next.js y creación de experiencias digitales excepcionales.",
+    "keywords": "desarrollador frontend, desarrollador react, typescript, next.js, diseñador UI/UX, desarrollador web, ingeniero de software, ingeniero frontend, react.js, desarrollador javascript"
+  }
+}
+

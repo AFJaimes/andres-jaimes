@@ -98,7 +98,7 @@ const About: FunctionComponent = () => {
     const tl = gsap.timeline();
     timelineRef.current = tl;
 
-    const baseDelay = 0.04;
+    const baseDelay = 0.008;
     let totalDelay = 0;
 
     description.forEach((paragraph, paragraphIndex) => {

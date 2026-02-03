@@ -1,14 +1,24 @@
 @import "/assets/styles/styles.module.scss";
 
 .root {
-  animation: pointer 1s infinite steps(1);
+  display: inline-block;
+  color: var(--color-accent-yellow, $yellow);
+  font-weight: 400;
+  animation: blink 1s infinite;
 }
 
-@keyframes pointer {
-  0% {
-    background-color: transparent;
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
   }
-  50% {
-    background-color: $white;
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    animation: none;
+    opacity: 1;
   }
 }

@@ -2,10 +2,12 @@
 
 .root {
   padding: spacing(3);
-  text-align: justify;
+  text-align: left;
   background-color: var(--color-bg-strong, $darkStrong);
   color: var(--color-text-primary, $white);
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .header {
@@ -20,6 +22,14 @@
   padding-left: spacing(4);
   font-weight: 400;
   transition: color 0.3s ease;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.animatedText {
+  display: inline;
+  white-space: pre-wrap;
 }
 
 .key {

@@ -1,0 +1,42 @@
+@import "/assets/styles/styles.module.scss";
+
+.root {
+  padding: spacing(3);
+  background-color: var(--popup-bg-editor, #252526);
+  color: var(--popup-text-primary, #cccccc);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text {
+  margin-bottom: spacing(2);
+  color: var(--popup-text-primary, #cccccc);
+  transition: color 0.3s ease;
+}
+
+.link {
+  display: inline-block;
+  margin-bottom: spacing(3);
+  color: var(--popup-link, #4ec9b0);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--popup-link-hover, #6ee7b7);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid var(--popup-link, #4ec9b0);
+    outline-offset: 2px;
+  }
+}
+
+.images {
+  width: 100%;
+  height: auto;
+  border-radius: spacing(1);
+  margin-bottom: spacing(2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

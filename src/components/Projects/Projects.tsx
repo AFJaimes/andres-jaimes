@@ -13,6 +13,7 @@ import Abbvie from "./Abbvie/Abbvie";
 import Xfinity from "./Xfinity/Xfinity";
 import Stellantis from "./Stellantis/Stellantis";
 import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
+import Akoya from "./Akoya/Akoya";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -68,6 +69,14 @@ const Projects: FunctionComponent = () => {
             text={t("projects.abbvie.text")}
             title={t("projects.abbvie.title")}
             component={<Abbvie />}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/Fintechs hero image.svg"
+            text={t("projects.akoya.text")}
+            title={t("projects.akoya.title")}
+            component={<Akoya />}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>

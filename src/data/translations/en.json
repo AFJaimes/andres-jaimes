@@ -12,7 +12,7 @@
     "jobs": {
       "bairesdev": {
         "jobTitle": "Senior Frontend Developer",
-        "description": "Development of internal and external applications with a focus on crafting exceptional user experiences and interfaces. Building scalable solutions using React, TypeScript, Next.js and GSAP for animations, ensuring both functionality and aesthetic excellence for the company's digital ecosystem."
+        "description": "Develop and assist projects for Akoya in partnership with BairesDev, improving and creating user interfaces for various applications including the app inventory system, AI Agent design system, Data Recipients Hub, and custom design systems. Building scalable solutions using React.js, TypeScript, Next.js, Sass, and design systems like Tailwind and Material-UI, along with GSAP animations to deliver exceptional user experiences."
       },
       "huge": {
         "jobTitle": "Senior Developer",
@@ -78,6 +78,14 @@
     "keyboard": {
       "text": "Pure CSS keyboard showcase",
       "title": "Pure CSS Keyboard Showcase"
+    },
+    "akoya": {
+      "text": "Akoya - UI & Design System",
+      "title": "Akoya Fintech Platform",
+      "description": "Participated in the creation of the UI and design system for internal Akoya applications, including the Data Recipient Hub.",
+      "linkText": "Akoya Fintech Platform",
+      "ariaLabel": "Visit Akoya Fintech Platform website",
+      "imageAlt": "Akoya Fintech Platform hero image"
     }
   },
   "skills": {

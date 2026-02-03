@@ -12,7 +12,7 @@
     "jobs": {
       "bairesdev": {
         "jobTitle": "Desarrollador Frontend Senior",
-        "description": "Desarrollo de aplicaciones internas y externas con enfoque en crear experiencias e interfaces de usuario excepcionales. Construcción de soluciones escalables usando React, TypeScript, Next.js y GSAP para animaciones, asegurando tanto funcionalidad como excelencia estética para el ecosistema digital de la empresa."
+        "description": "Desarrollo y asistencia en proyectos para Akoya en asociación con BairesDev, mejorando y creando interfaces de usuario para diversas aplicaciones incluyendo el sistema de inventario de aplicaciones, sistema de diseño de Agente de IA, Hub de Receptores de Datos y sistemas de diseño personalizados. Construcción de soluciones escalables usando React.js, TypeScript, Next.js, Sass y sistemas de diseño como Tailwind y Material-UI, junto con animaciones GSAP para entregar experiencias de usuario excepcionales."
       },
       "huge": {
         "jobTitle": "Desarrollador Senior",
@@ -78,6 +78,14 @@
     "keyboard": {
       "text": "Showcase de teclado en CSS puro",
       "title": "Showcase de Teclado CSS Puro"
+    },
+    "akoya": {
+      "text": "Akoya - UI y Sistema de Diseño",
+      "title": "Plataforma Fintech de Akoya",
+      "description": "Participé en la creación de la UI y el sistema de diseño para aplicaciones internas de Akoya, incluyendo el Data Recipient Hub.",
+      "linkText": "Plataforma Fintech de Akoya",
+      "ariaLabel": "Visitar el sitio web de la Plataforma Fintech de Akoya",
+      "imageAlt": "Imagen principal de la Plataforma Fintech de Akoya"
     }
   },
   "skills": {

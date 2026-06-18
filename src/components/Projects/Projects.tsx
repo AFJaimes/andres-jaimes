@@ -16,6 +16,7 @@ import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
 import Akoya from "./Akoya/Akoya";
 import UiUxPlaybook from "./UiUxPlaybook/UiUxPlaybook";
 import Coltcg from "./Coltcg/Coltcg";
+import Matria from "./Matria/Matria";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -32,6 +33,14 @@ const Projects: FunctionComponent = () => {
               {t("projects.hobbyProjects")}
             </span>
           </h2>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/matria.png"
+            text={t("projects.matria.text")}
+            title={t("projects.matria.title")}
+            component={<Matria />}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Card

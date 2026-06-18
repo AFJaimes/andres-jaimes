@@ -102,6 +102,14 @@
       "linkText": "https://coltcg.com",
       "ariaLabel": "Visitar el sitio web de COLTCG",
       "imageAlt": "Captura de pantalla de la página principal de COLTCG"
+    },
+    "matria": {
+      "text": "Matria Arq -> sitio de arquitectura",
+      "title": "Matria Arq — Arquitectura Bioclimática",
+      "description": "Sitio web por encargo para un estudio de arquitectura enfocado en diseño bioclimático y sostenibilidad. Incluye vitrina de proyectos, una sección de herramientas con cotizadores y calculadoras de huella de carbono, y un flujo de contacto para consultorías. Bilingüe (ES/EN), construido con Next.js.",
+      "linkText": "https://matria-arq.vercel.app/es",
+      "ariaLabel": "Visitar el sitio web de Matria Arq",
+      "imageAlt": "Captura de pantalla de la página principal de Matria Arq"
     }
   },
   "skills": {

@@ -102,6 +102,14 @@
       "linkText": "https://coltcg.com",
       "ariaLabel": "Visit COLTCG website",
       "imageAlt": "COLTCG homepage screenshot"
+    },
+    "matria": {
+      "text": "Matria Arq -> architecture site",
+      "title": "Matria Arq — Bioclimatic Architecture",
+      "description": "Commissioned website for an architecture practice focused on bioclimatic design and sustainability. Features a project showcase, a tools section with quotation tools and carbon-footprint calculators, and a consultancy contact flow. Bilingual (ES/EN), built with Next.js.",
+      "linkText": "https://matria-arq.vercel.app/es",
+      "ariaLabel": "Visit Matria Arq website",
+      "imageAlt": "Matria Arq homepage screenshot"
     }
   },
   "skills": {

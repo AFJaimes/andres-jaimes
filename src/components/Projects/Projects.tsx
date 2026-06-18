@@ -14,6 +14,7 @@ import Xfinity from "./Xfinity/Xfinity";
 import Stellantis from "./Stellantis/Stellantis";
 import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
 import Akoya from "./Akoya/Akoya";
+import UiUxPlaybook from "./UiUxPlaybook/UiUxPlaybook";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -30,6 +31,14 @@ const Projects: FunctionComponent = () => {
               {t("projects.hobbyProjects")}
             </span>
           </h2>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/uiuxplaybook.png"
+            text={t("projects.uiUxPlaybook.text")}
+            title={t("projects.uiUxPlaybook.title")}
+            component={<UiUxPlaybook />}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Card

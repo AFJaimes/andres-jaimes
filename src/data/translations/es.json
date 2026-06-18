@@ -86,6 +86,14 @@
       "linkText": "Plataforma Fintech de Akoya",
       "ariaLabel": "Visitar el sitio web de la Plataforma Fintech de Akoya",
       "imageAlt": "Imagen principal de la Plataforma Fintech de Akoya"
+    },
+    "uiUxPlaybook": {
+      "text": "UI/UX Playbook -> Next.js + MUI",
+      "title": "UI/UX Playbook",
+      "description": "Un playbook educativo que enseña principios de UI/UX a través de ejemplos funcionales y un sistema visual de cuaderno manuscrito. Construido con Next.js, TypeScript, MUI Material y módulos SCSS — capítulos sobre leyes UX, principios UI, accesibilidad y guías de componentes.",
+      "linkText": "https://ui-ux-playbook.vercel.app/",
+      "ariaLabel": "Visitar el sitio web de UI/UX Playbook",
+      "imageAlt": "Captura de pantalla de la página principal de UI/UX Playbook"
     }
   },
   "skills": {

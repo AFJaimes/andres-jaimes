@@ -94,6 +94,14 @@
       "linkText": "https://ui-ux-playbook.vercel.app/",
       "ariaLabel": "Visitar el sitio web de UI/UX Playbook",
       "imageAlt": "Captura de pantalla de la página principal de UI/UX Playbook"
+    },
+    "coltcg": {
+      "text": "COLTCG.com -> plataforma TCG",
+      "title": "COLTCG — Colombia TCG",
+      "description": "Plataforma de trading card games para coleccionistas en Colombia. Rastrea tus colecciones de Yu-Gi-Oh!, Pokémon, MTG y One Piece, construye y comparte mazos, consulta los últimos sets y la banlist, encuentra eventos locales en tiendas de hobby y lee contenido editorial. Construido como proyecto personal full-stack.",
+      "linkText": "https://coltcg.com",
+      "ariaLabel": "Visitar el sitio web de COLTCG",
+      "imageAlt": "Captura de pantalla de la página principal de COLTCG"
     }
   },
   "skills": {

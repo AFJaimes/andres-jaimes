@@ -15,6 +15,7 @@ import Stellantis from "./Stellantis/Stellantis";
 import KeyboardShowcase from "./KeyboardShowcase/KeyboardShowcase";
 import Akoya from "./Akoya/Akoya";
 import UiUxPlaybook from "./UiUxPlaybook/UiUxPlaybook";
+import Coltcg from "./Coltcg/Coltcg";
 
 // <DvdScreensaver />
 const Projects: FunctionComponent = () => {
@@ -31,6 +32,14 @@ const Projects: FunctionComponent = () => {
               {t("projects.hobbyProjects")}
             </span>
           </h2>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Card
+            image="/coltcg.png"
+            text={t("projects.coltcg.text")}
+            title={t("projects.coltcg.title")}
+            component={<Coltcg />}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Card
